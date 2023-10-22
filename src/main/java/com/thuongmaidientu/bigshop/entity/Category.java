@@ -22,23 +22,7 @@ public class Category extends Base {
 	private String name;
 	
 	@OneToMany(mappedBy="category")
-	private List<Product> products = new ArrayList<Product>();
+	private List<Product> products = new ArrayList<>();
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public List<Product> getProducts() {
-		return products;
-	}
-
-	public void setProducts(List<Product> products) {
-		this.products = products;
-	}
-	
 	
 }

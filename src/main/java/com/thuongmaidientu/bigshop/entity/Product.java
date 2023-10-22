@@ -58,5 +58,5 @@ public class Product extends Base {
 	private Category category;
 	
 	@OneToMany(mappedBy="product")
-	private List<OrderDetail> orderDetail = new ArrayList<OrderDetail>();
+	private List<OrderDetail> orderDetail = new ArrayList<>();
 }

@@ -20,7 +20,7 @@ public class Order extends Base {
 	private Integer totalAmount;
 	
 	@OneToMany(mappedBy="order")
-	private List<OrderDetail> orderDetail = new ArrayList<OrderDetail>();
+	private List<OrderDetail> orderDetail = new ArrayList<>();
 	
 	
 }

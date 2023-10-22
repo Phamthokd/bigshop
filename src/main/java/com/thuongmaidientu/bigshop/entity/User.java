@@ -52,7 +52,7 @@ public class User extends Base {
 	
 	@ManyToMany
 	@JoinTable(name = "user_role",joinColumns = @JoinColumn(name = "userid"),inverseJoinColumns = @JoinColumn(name = "roleid"))
-	private List<Role> roles = new ArrayList<Role>();
+	private List<Role> roles = new ArrayList<>();
 
 	
 	
