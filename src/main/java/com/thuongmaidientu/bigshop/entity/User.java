@@ -23,10 +23,10 @@ import lombok.NoArgsConstructor;
 public class User extends Base {
 	
 	
-	@Column(name = "fisrtname")
+	@Column
 	private String firstName;
 	
-	@Column(name = "lastName")
+	@Column
 	private String lastName;
 	
 	@Column(name = "gender")

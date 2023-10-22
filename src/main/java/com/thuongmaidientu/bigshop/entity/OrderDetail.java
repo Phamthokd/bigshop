@@ -32,7 +32,7 @@ public class OrderDetail {
 	@Column(name = "quantity")
 	private Integer quantity;
 	
-	@Column(name = "unitprice")
+	@Column
 	private Integer unitPrice;
 
 }

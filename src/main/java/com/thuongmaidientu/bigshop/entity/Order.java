@@ -12,11 +12,11 @@ import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 
 @Entity
-@Table(name = "oder")
+@Table(name = "`order`")
 @AllArgsConstructor
 @NoArgsConstructor
 public class Order extends Base {
-	@Column(name = "totalamount")
+	@Column
 	private Integer totalAmount;
 	
 	@OneToMany(mappedBy="order")

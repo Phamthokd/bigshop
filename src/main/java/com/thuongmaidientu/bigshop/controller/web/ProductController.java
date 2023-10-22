@@ -4,10 +4,12 @@ import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
+@RequestMapping(value="/web")
 public class ProductController {
 	@GetMapping(value="/shop-fullwidth-list")
-	public String shopfullwidthlist(HttpServletRequest request) {
+	public String shopFullWidthList(HttpServletRequest request) {
 		request.setAttribute("smg", "success");
 		return "/web/shop-fullwidth-list";
 	}

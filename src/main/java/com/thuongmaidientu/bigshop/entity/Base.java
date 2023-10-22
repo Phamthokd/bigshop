@@ -25,21 +25,21 @@ import lombok.NoArgsConstructor;
 public abstract class Base {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
+	private Long id;
 	
-	@Column(name = "createddate")
+	@Column
 	@CreatedDate
 	private Date createdDate;
 	
-	@Column(name = "createdby")
+	@Column
 	@CreatedBy
 	private String createdBy;
 	
-	@Column(name = "modifieddate")
+	@Column
 	@LastModifiedDate
-	private Date modifieddate;
+	private Date modifiedDate;
 	
-	@Column(name = "modifiedby")
+	@Column
 	@LastModifiedBy
 	private String modifiedBy;
 	

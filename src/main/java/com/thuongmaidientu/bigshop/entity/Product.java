@@ -29,7 +29,7 @@ public class Product extends Base {
 	@Column(name = "discount")
 	private Integer discount;
 	
-	@Column(name = "shortdescription",columnDefinition = "TEXT")
+	@Column(columnDefinition = "TEXT")
 	private String shortDescription;
 	
 	@Column(name = "description",columnDefinition = "TEXT")
