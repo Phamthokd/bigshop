@@ -3,6 +3,7 @@ package com.thuongmaidientu.bigshop.entity;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
@@ -19,6 +20,7 @@ import javax.persistence.ManyToMany;
 @Table(name = "role")
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class Role {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

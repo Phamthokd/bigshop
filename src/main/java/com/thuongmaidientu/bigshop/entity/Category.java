@@ -9,6 +9,7 @@ import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.NoArgsConstructor;
 
 
@@ -17,6 +18,7 @@ import lombok.NoArgsConstructor;
 @Table(name = "category")
 @AllArgsConstructor
 @NoArgsConstructor
+@Data
 public class Category extends Base {
 	@Column(name="name")
 	private String name;
