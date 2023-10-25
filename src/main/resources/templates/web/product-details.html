@@ -16,8 +16,8 @@
                 <div class="col-12">
                     <div class="breadcrumb_content">
                         <ul>
-                            <li><a href="index.html">home</a></li>
-                            <li>product details</li>
+                            <li><a href="#">Trang chủ</a></li>
+                            <li>Chi tiết sản phẩm</li>
                         </ul>
                     </div>
                 </div>
@@ -34,41 +34,41 @@
                     <div class="product-details-tab">
                         <div id="img-1" class="zoomWrapper single-zoom">
                             <a href="#">
-                                <img id="zoom1" src="assets/img/product/productbig4.jpg"
-                                    data-zoom-image="assets/img/product/productbig4.jpg" alt="big-1">
+                                <img id="zoom1" th:src="@{/assets/img/product/productbig4.jpg}"
+                                    th:data-zoom-image="@{/assets/img/product/productbig4.jpg}" alt="big-1">
                             </a>
                         </div>
                         <div class="single-zoom-thumb">
                             <ul class="s-tab-zoom owl-carousel single-product-active" id="gallery_01">
                                 <li>
                                     <a href="#" class="elevatezoom-gallery active" data-update=""
-                                        data-image="assets/img/product/productbig4.jpg"
-                                        data-zoom-image="assets/img/product/productbig4.jpg">
-                                        <img src="assets/img/product/productbig4.jpg" alt="zo-th-1" />
+                                        th:data-image="@{/assets/img/product/productbig4.jpg}"
+                                        th:data-zoom-image="@{/assets/img/product/productbig4.jpg}">
+                                        <img th:src="@{/assets/img/product/productbig4.jpg}" alt="zo-th-1" />
                                     </a>
 
                                 </li>
                                 <li>
                                     <a href="#" class="elevatezoom-gallery active" data-update=""
-                                        data-image="assets/img/product/productbig1.jpg"
-                                        data-zoom-image="assets/img/product/productbig1.jpg">
-                                        <img src="assets/img/product/productbig1.jpg" alt="zo-th-1" />
+                                        th:data-image="@{/assets/img/product/productbig4.jpg}"
+                                        th:data-zoom-image="@{/assets/img/product/productbig4.jpg}">
+                                        <img th:src="@{/assets/img/product/productbig4.jpg}" alt="zo-th-1" />
                                     </a>
 
                                 </li>
                                 <li>
                                     <a href="#" class="elevatezoom-gallery active" data-update=""
-                                        data-image="assets/img/product/productbig2.jpg"
-                                        data-zoom-image="assets/img/product/productbig2.jpg">
-                                        <img src="assets/img/product/productbig2.jpg" alt="zo-th-1" />
+                                        th:data-image="@{/assets/img/product/productbig4.jpg}"
+                                        th:data-zoom-image="@{/assets/img/product/productbig4.jpg}">
+                                        <img th:src="@{/assets/img/product/productbig4.jpg}" alt="zo-th-1" />
                                     </a>
 
                                 </li>
                                 <li>
                                     <a href="#" class="elevatezoom-gallery active" data-update=""
-                                        data-image="assets/img/product/productbig3.jpg"
-                                        data-zoom-image="assets/img/product/productbig3.jpg">
-                                        <img src="assets/img/product/productbig3.jpg" alt="zo-th-1" />
+                                        th:data-image="@{/assets/img/product/productbig4.jpg}"
+                                        th:data-zoom-image="@{/assets/img/product/productbig4.jpg}">
+                                        <img th:src="@{/assets/img/product/productbig4.jpg}" alt="zo-th-1" />
                                     </a>
 
                                 </li>
@@ -80,7 +80,7 @@
                     <div class="product_d_right">
                         <form action="#">
                             <div class="productd_title_nav">
-                                <h1><a href="#">Lorem ipsum dolor sit amet elit</a></h1>
+                                <h1><a href="#">Ten san pham</a></h1>
                                 <div class="product_nav">
                                     <ul>
                                         <li class="prev"><a href="product-details.html"><i
@@ -106,35 +106,17 @@
                                 <span class="old_price">£80.00</span>
                             </div>
                             <div class="product_desc">
-                                <p>eget velit. Donec ac tempus ante. Fusce ultricies massa massa. Fusce aliquam, purus
-                                    eget sagittis vulputate, sapien libero hendrerit est, sed commodo augue nisi non
-                                    neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor, lorem et
-                                    placerat vestibulum, metus nisi posuere nisl, in </p>
+                                <p>Mieu ta ngan </p>
                             </div>
-                            <div class="product_variant color">
-                                <h3>Available Options</h3>
-                                <label>color</label>
-                                <ul>
-                                    <li class="color1"><a href="#"></a></li>
-                                    <li class="color2"><a href="#"></a></li>
-                                    <li class="color3"><a href="#"></a></li>
-                                    <li class="color4"><a href="#"></a></li>
-                                </ul>
-                            </div>
+
                             <div class="product_variant quantity">
-                                <label>quantity</label>
+                                <label>Số lượng</label>
                                 <input min="1" max="100" value="1" type="number">
-                                <button class="button" type="submit">add to cart</button>
+                                <button class="button" type="submit">Thêm vào giỏ hàng</button>
 
                             </div>
-                            <div class=" product_d_action">
-                                <ul>
-                                    <li><a href="#" title="Add to wishlist">+ Add to Wishlist</a></li>
-                                    <li><a href="#" title="Add to wishlist">+ Compare</a></li>
-                                </ul>
-                            </div>
                             <div class="product_meta">
-                                <span>Category: <a href="#">Clothing</a></span>
+                                <span>Danh mục: <a href="#">quần áo</a></span>
                             </div>
 
                         </form>
@@ -170,15 +152,12 @@
                             <ul class="nav" role="tablist">
                                 <li>
                                     <a class="active" data-bs-toggle="tab" href="#info" role="tab" aria-controls="info"
-                                        aria-selected="false">Description</a>
+                                        aria-selected="false">Miêu tả</a>
                                 </li>
-                                <li>
-                                    <a data-bs-toggle="tab" href="#sheet" role="tab" aria-controls="sheet"
-                                        aria-selected="false">Specification</a>
-                                </li>
+
                                 <li>
                                     <a data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews"
-                                        aria-selected="false">Reviews (1)</a>
+                                        aria-selected="false">Đánh giá</a>
                                 </li>
                             </ul>
                         </div>
@@ -198,39 +177,7 @@
                                         luctus a nunc. Etiam gravida vehicula tellus, in imperdiet ligula euismod eget.
                                     </p>
                                 </div>
-                            </div>
-                            <div class="tab-pane fade" id="sheet" role="tabpanel">
-                                <div class="product_d_table">
-                                    <form action="#">
-                                        <table>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="first_child">Compositions</td>
-                                                    <td>Polyester</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="first_child">Styles</td>
-                                                    <td>Girly</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="first_child">Properties</td>
-                                                    <td>Short Dress</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </form>
-                                </div>
-                                <div class="product_info_content">
-                                    <p>Fashion has been creating well-designed collections since 2010. The brand offers
-                                        feminine designs delivering stylish separates and statement dresses which have
-                                        since evolved into a full ready-to-wear collection in which every item is a
-                                        vital part of a woman's wardrobe. The result? Cool, easy, chic looks with
-                                        youthful elegance and unmistakable signature style. All the beautiful pieces are
-                                        made in Italy and manufactured with the greatest attention. Now Fashion extends
-                                        to a range of accessories including shoes, hats, belts and more!</p>
-                                </div>
-                            </div>
-
+                            </div> 
                             <div class="tab-pane fade" id="reviews" role="tabpanel">
                                 <div class="reviews_wrapper">
                                     <h2>1 review for Donec eu furniture</h2>
@@ -305,7 +252,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section_title psec_title">
-                        <h2>Related Products</h2>
+                        <h2>Sản phẩm liên quan</h2>
                     </div>
                 </div>
             </div>
@@ -315,10 +262,10 @@
                         <article class="single_product">
                             <figure>
                                 <div class="product_thumb">
-                                    <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product14.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product15.jpg" alt=""></a>
+                                    <a class="primary_img" href="#"><img
+                                            th:src="@{/assets/img/product/product14.jpg}" alt=""></a>
+                                    <a class="secondary_img" href="#"><img
+                                            src="@{/assets/img/product/product15.jpg}" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">-15%</span>
                                     </div>
@@ -342,7 +289,7 @@
                                         <span class="current_price">$78.00</span>
                                     </div>
                                     <div class="add_to_cart">
-                                        <a href="cart.html">+ Add to cart</a>
+                                        <a th:href="@{/web/cart}">Thêm vào giỏ hàng</a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -352,10 +299,10 @@
                         <article class="single_product">
                             <figure>
                                 <div class="product_thumb">
-                                    <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product10.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product11.jpg" alt=""></a>
+                                    <a class="primary_img" href="#"><img
+                                            th:src="@{/assets/img/product/product14.jpg}" alt=""></a>
+                                    <a class="secondary_img" href="#"><img
+                                            src="@{/assets/img/product/product15.jpg}" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">-15%</span>
                                     </div>
@@ -372,14 +319,14 @@
                                     </div>
                                 </div>
                                 <figcaption class="product_content">
-                                    <h4 class="product_name"><a href="product-details.html">Trans-Weight Hooded Wind</a>
+                                    <h4 class="product_name"><a href="product-details.html">Fila Locker Room Varsity</a>
                                     </h4>
                                     <div class="price_box">
-                                        <span class="old_price">$178.00</span>
-                                        <span class="current_price">$65.00</span>
+                                        <span class="old_price">$183.00</span>
+                                        <span class="current_price">$78.00</span>
                                     </div>
                                     <div class="add_to_cart">
-                                        <a href="cart.html">+ Add to cart</a>
+                                        <a th:href="@{/web/cart}">Thêm vào giỏ hàng</a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -389,10 +336,10 @@
                         <article class="single_product">
                             <figure>
                                 <div class="product_thumb">
-                                    <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product12.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product13.jpg" alt=""></a>
+                                    <a class="primary_img" href="#"><img
+                                            th:src="@{/assets/img/product/product14.jpg}" alt=""></a>
+                                    <a class="secondary_img" href="#"><img
+                                            src="@{/assets/img/product/product15.jpg}" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">-15%</span>
                                     </div>
@@ -409,51 +356,14 @@
                                     </div>
                                 </div>
                                 <figcaption class="product_content">
-                                    <h4 class="product_name"><a href="product-details.html">Juicy Couture Juicy
-                                            Quilted</a></h4>
-                                    <div class="price_box">
-                                        <span class="old_price">$180.00</span>
-                                        <span class="current_price">$58.00</span>
-                                    </div>
-                                    <div class="add_to_cart">
-                                        <a href="cart.html">+ Add to cart</a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </article>
-                    </div>
-                    <div class="col-lg-3">
-                        <article class="single_product">
-                            <figure>
-                                <div class="product_thumb">
-                                    <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product17.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product16.jpg" alt=""></a>
-                                    <div class="label_product">
-                                        <span class="label_sale">-15%</span>
-                                    </div>
-                                    <div class="action_links">
-                                        <ul>
-                                            <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
-                                                        class="icon-heart icons"></i></a></li>
-                                            <li class="compare"><a href="#" title="Add to Compare"><i
-                                                        class="icon-refresh icons"></i></a></li>
-                                            <li class="quick_button"><a href="#" data-bs-toggle="modal"
-                                                    data-bs-target="#modal_box" title="quick view"> <i
-                                                        class="icon-magnifier-add icons"></i></a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <figcaption class="product_content">
-                                    <h4 class="product_name"><a href="product-details.html">Water and Wind Resistant</a>
+                                    <h4 class="product_name"><a href="product-details.html">Fila Locker Room Varsity</a>
                                     </h4>
                                     <div class="price_box">
-                                        <span class="old_price">$176.00</span>
-                                        <span class="current_price">$86.00</span>
+                                        <span class="old_price">$183.00</span>
+                                        <span class="current_price">$78.00</span>
                                     </div>
                                     <div class="add_to_cart">
-                                        <a href="cart.html">+ Add to cart</a>
+                                         <a th:href="@{/web/cart}">Thêm vào giỏ hàng</a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -463,10 +373,10 @@
                         <article class="single_product">
                             <figure>
                                 <div class="product_thumb">
-                                    <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product6.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product7.jpg" alt=""></a>
+                                    <a class="primary_img" href="#"><img
+                                            th:src="@{/assets/img/product/product14.jpg}" alt=""></a>
+                                    <a class="secondary_img" href="#"><img
+                                            src="@{/assets/img/product/product15.jpg}" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">-15%</span>
                                     </div>
@@ -483,14 +393,51 @@
                                     </div>
                                 </div>
                                 <figcaption class="product_content">
-                                    <h4 class="product_name"><a href="product-details.html">Madden by Steve Madden</a>
+                                    <h4 class="product_name"><a href="product-details.html">Fila Locker Room Varsity</a>
                                     </h4>
                                     <div class="price_box">
-                                        <span class="old_price">$156.00</span>
-                                        <span class="current_price">$82.00</span>
+                                        <span class="old_price">$183.00</span>
+                                        <span class="current_price">$78.00</span>
                                     </div>
                                     <div class="add_to_cart">
-                                        <a href="cart.html">+ Add to cart</a>
+                                         <a th:href="@{/web/cart}">Thêm vào giỏ hàng</a>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </article>
+                    </div>
+                    <div class="col-lg-3">
+                        <article class="single_product">
+                            <figure>
+                                <div class="product_thumb">
+                                    <a class="primary_img" href="#"><img
+                                            th:src="@{/assets/img/product/product14.jpg}" alt=""></a>
+                                    <a class="secondary_img" href="#"><img
+                                            src="@{/assets/img/product/product15.jpg}" alt=""></a>
+                                    <div class="label_product">
+                                        <span class="label_sale">-15%</span>
+                                    </div>
+                                    <div class="action_links">
+                                        <ul>
+                                            <li class="wishlist"><a href="wishlist.html" title="Add to Wishlist"><i
+                                                        class="icon-heart icons"></i></a></li>
+                                            <li class="compare"><a href="#" title="Add to Compare"><i
+                                                        class="icon-refresh icons"></i></a></li>
+                                            <li class="quick_button"><a href="#" data-bs-toggle="modal"
+                                                    data-bs-target="#modal_box" title="quick view"> <i
+                                                        class="icon-magnifier-add icons"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <figcaption class="product_content">
+                                    <h4 class="product_name"><a href="product-details.html">Fila Locker Room Varsity</a>
+                                    </h4>
+                                    <div class="price_box">
+                                        <span class="old_price">$183.00</span>
+                                        <span class="current_price">$78.00</span>
+                                    </div>
+                                    <div class="add_to_cart">
+                                        <a th:href="@{/web/cart}">Thêm vào giỏ hàng</a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -508,7 +455,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="section_title psec_title">
-                        <h2>Upsell Products </h2>
+                        <h2>Gợi ý</h2>
                     </div>
                 </div>
             </div>
@@ -518,10 +465,10 @@
                         <article class="single_product">
                             <figure>
                                 <div class="product_thumb">
-                                    <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product18.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product19.jpg" alt=""></a>
+                                    <a class="primary_img" th:href="@{/web/product-details}"><img
+                                            th:src="@{/assets/img/product/product18.jpg}" alt=""></a>
+                                            <a class="secondary_img" th:href="@{/web/product-details}"><img
+                                                th:src="@{/assets/img/product/product19.jpg}" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">-15%</span>
                                     </div>
@@ -545,7 +492,7 @@
                                         <span class="current_price">$58.00</span>
                                     </div>
                                     <div class="add_to_cart">
-                                        <a href="cart.html">+ Add to cart</a>
+                                        <a href="@{/web/cart}">Thêm vào giỏ hàng</a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -555,10 +502,10 @@
                         <article class="single_product">
                             <figure>
                                 <div class="product_thumb">
-                                    <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product16.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product17.jpg" alt=""></a>
+                                    <a class="primary_img" th:href="@{/web/product-details}"><img
+                                            th:src="@{/assets/img/product/product18.jpg}" alt=""></a>
+                                            <a class="secondary_img" th:href="@{/web/product-details}"><img
+                                                th:src="@{/assets/img/product/product19.jpg}" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">-15%</span>
                                     </div>
@@ -575,14 +522,14 @@
                                     </div>
                                 </div>
                                 <figcaption class="product_content">
-                                    <h4 class="product_name"><a href="product-details.html">Water and Wind Resistant</a>
-                                    </h4>
+                                    <h4 class="product_name"><a href="product-details.html">Juicy Couture Juicy
+                                            Quilted</a></h4>
                                     <div class="price_box">
-                                        <span class="old_price">$176.00</span>
-                                        <span class="current_price">$86.00</span>
+                                        <span class="old_price">$180.00</span>
+                                        <span class="current_price">$58.00</span>
                                     </div>
                                     <div class="add_to_cart">
-                                        <a href="cart.html">+ Add to cart</a>
+                                        <a href="@{/web/cart}">Thêm vào giỏ hàng</a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -592,10 +539,10 @@
                         <article class="single_product">
                             <figure>
                                 <div class="product_thumb">
-                                    <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product7.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product6.jpg" alt=""></a>
+                                    <a class="primary_img" th:href="@{/web/product-details}"><img
+                                            th:src="@{/assets/img/product/product18.jpg}" alt=""></a>
+                                            <a class="secondary_img" th:href="@{/web/product-details}"><img
+                                                th:src="@{/assets/img/product/product19.jpg}" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">-15%</span>
                                     </div>
@@ -612,14 +559,14 @@
                                     </div>
                                 </div>
                                 <figcaption class="product_content">
-                                    <h4 class="product_name"><a href="product-details.html">Madden by Steve Madden</a>
-                                    </h4>
+                                    <h4 class="product_name"><a href="product-details.html">Juicy Couture Juicy
+                                            Quilted</a></h4>
                                     <div class="price_box">
-                                        <span class="old_price">$156.00</span>
-                                        <span class="current_price">$82.00</span>
+                                        <span class="old_price">$180.00</span>
+                                        <span class="current_price">$58.00</span>
                                     </div>
                                     <div class="add_to_cart">
-                                        <a href="cart.html">+ Add to cart</a>
+                                        <a href="@{/web/cart}">Thêm vào giỏ hàng</a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -629,10 +576,10 @@
                         <article class="single_product">
                             <figure>
                                 <div class="product_thumb">
-                                    <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product15.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product14.jpg" alt=""></a>
+                                    <a class="primary_img" th:href="@{/web/product-details}"><img
+                                            th:src="@{/assets/img/product/product18.jpg}" alt=""></a>
+                                            <a class="secondary_img" th:href="@{/web/product-details}"><img
+                                                th:src="@{/assets/img/product/product19.jpg}" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">-15%</span>
                                     </div>
@@ -649,14 +596,14 @@
                                     </div>
                                 </div>
                                 <figcaption class="product_content">
-                                    <h4 class="product_name"><a href="product-details.html">Fila Locker Room Varsity</a>
-                                    </h4>
+                                    <h4 class="product_name"><a href="product-details.html">Juicy Couture Juicy
+                                            Quilted</a></h4>
                                     <div class="price_box">
-                                        <span class="old_price">$183.00</span>
-                                        <span class="current_price">$78.00</span>
+                                        <span class="old_price">$180.00</span>
+                                        <span class="current_price">$58.00</span>
                                     </div>
                                     <div class="add_to_cart">
-                                        <a href="cart.html">+ Add to cart</a>
+                                        <a href="@{/web/cart}">Thêm vào giỏ hàng</a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -666,10 +613,10 @@
                         <article class="single_product">
                             <figure>
                                 <div class="product_thumb">
-                                    <a class="primary_img" href="product-details.html"><img
-                                            src="assets/img/product/product10.jpg" alt=""></a>
-                                    <a class="secondary_img" href="product-details.html"><img
-                                            src="assets/img/product/product11.jpg" alt=""></a>
+                                    <a class="primary_img" th:href="@{/web/product-details}"><img
+                                            th:src="@{/assets/img/product/product18.jpg}" alt=""></a>
+                                            <a class="secondary_img" th:href="@{/web/product-details}"><img
+                                                th:src="@{/assets/img/product/product19.jpg}" alt=""></a>
                                     <div class="label_product">
                                         <span class="label_sale">-15%</span>
                                     </div>
@@ -686,14 +633,14 @@
                                     </div>
                                 </div>
                                 <figcaption class="product_content">
-                                    <h4 class="product_name"><a href="product-details.html">Trans-Weight Hooded Wind</a>
-                                    </h4>
+                                    <h4 class="product_name"><a href="product-details.html">Juicy Couture Juicy
+                                            Quilted</a></h4>
                                     <div class="price_box">
-                                        <span class="old_price">$178.00</span>
-                                        <span class="current_price">$65.00</span>
+                                        <span class="old_price">$180.00</span>
+                                        <span class="current_price">$58.00</span>
                                     </div>
                                     <div class="add_to_cart">
-                                        <a href="cart.html">+ Add to cart</a>
+                                        <a href="@{/web/cart}">Thêm vào giỏ hàng</a>
                                     </div>
                                 </figcaption>
                             </figure>
@@ -705,79 +652,6 @@
         </div>
     </section>
     <!--product area end-->
-
-    <!--brand area start-->
-    <div class="brand_area brand_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="brand_container owl-carousel ">
-                        <div class="single_brand">
-                            <a href="#"><img src="assets/img/brand/brand1.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="#"><img src="assets/img/brand/brand2.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="#"><img src="assets/img/brand/brand3.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="#"><img src="assets/img/brand/brand4.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="#"><img src="assets/img/brand/brand5.jpg" alt=""></a>
-                        </div>
-                        <div class="single_brand">
-                            <a href="#"><img src="assets/img/brand/brand1.jpg" alt=""></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--brand area end-->
-
-    <!--shipping area start-->
-    <div class="shipping_area shipping_padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_shipping">
-                        <div class="shipping_icone">
-                            <i class="icon-call-out icons"></i>
-                        </div>
-                        <div class="shipping_content">
-                            <h3><a href="tel:0123456789">0123456789</a></h3>
-                            <p>/ Phone</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_shipping">
-                        <div class="shipping_icone">
-                            <i class="icon-location-pin icons"></i>
-                        </div>
-                        <div class="shipping_content">
-                            <h3>Your address goes here.</h3>
-                            <p>/ Address</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_shipping col3">
-                        <div class="shipping_icone">
-                            <i class="icon-envelope icons"></i>
-                        </div>
-                        <div class="shipping_content">
-                            <h3><a href="#">demo@example.com</a></h3>
-                            <p>/ Email</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--shipping area end-->
 
     <!--footer area start-->
     <footer th:replace="web/fragments/footer :: footer"></footer>
