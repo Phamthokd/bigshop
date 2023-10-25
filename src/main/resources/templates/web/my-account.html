@@ -38,7 +38,7 @@
                                 <li><a href="#dashboard" data-bs-toggle="tab" class="nav-link active">Thống kê</a></li>
                                 <li> <a href="#orders" data-bs-toggle="tab" class="nav-link">Đơn hàng</a></li>
                                 <li><a href="#address" data-bs-toggle="tab" class="nav-link">Địa chỉ</a></li>
-                                <li><a href="#account-details" data-bs-toggle="tab" class="nav-link">Account details</a>
+                                <li><a href="#account-details" data-bs-toggle="tab" class="nav-link">Sửa thông tin</a>
                                 </li>
                                 <li><a href="login.html" class="nav-link">Đăng xuất</a></li>
                             </ul>
@@ -56,11 +56,11 @@
                                     <table class="table">
                                         <thead>
                                             <tr>
-                                                <th>Order</th>
-                                                <th>Date</th>
-                                                <th>Status</th>
-                                                <th>Total</th>
-                                                <th>Actions</th>
+                                                <th>Đơn hàng</th>
+                                                <th>Ngày</th>
+                                                <th>Trạng thái</th>
+                                                <th>Tổng</th>
+                                                <th>Xem</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -82,66 +82,32 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="tab-pane fade" id="downloads">
-                                <h3>Downloads</h3>
-                                <div class="table-responsive">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th>Product</th>
-                                                <th>Downloads</th>
-                                                <th>Expires</th>
-                                                <th>Download</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>Shopnovilla - Free Real Estate PSD Template</td>
-                                                <td>May 10, 2018</td>
-                                                <td><span class="danger">Expired</span></td>
-                                                <td><a href="#" class="view">Click Here To Download Your File</a></td>
-                                            </tr>
-                                            <tr>
-                                                <td>Organic - ecommerce html template</td>
-                                                <td>Sep 11, 2018</td>
-                                                <td>Never</td>
-                                                <td><a href="#" class="view">Click Here To Download Your File</a></td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
                             <div class="tab-pane" id="address">
-                                <p>The following addresses will be used on the checkout page by default.</p>
+                                <p>Đây sẽ là địa chỉ mặc định giao hàng</p>
                                 <h4 class="billing-address">Billing address</h4>
-                                <a href="#" class="view">Edit</a>
+                                <a href="#" class="view">Sửa</a>
                                 <p><strong>Bobby Jackson</strong></p>
                                 <address>
-                                    <span><strong>City:</strong> Seattle</span>,
+                                    <span><strong>Địa chỉ:</strong> Seattle</span>,
                                     <br>
-                                    <span><strong>State:</strong> Washington(WA)</span>,
-                                    <br>
-                                    <span><strong>ZIP:</strong> 98101</span>,
-                                    <br>
-                                    <span><strong>Country:</strong> USA</span>
+                                    <span><strong>SDT:</strong> USA</span>
                                 </address>
                             </div>
                             <div class="tab-pane fade" id="account-details">
-                                <h3>Account details </h3>
+                                <h3>Thông tin</h3>
                                 <div class="login">
                                     <div class="login_form_container">
                                         <div class="account_login_form">
                                             <form action="#">
-                                                <p>Already have an account? <a href="#">Log in instead!</a></p>
                                                 <div class="input-radio">
                                                     <span class="custom-radio"><input type="radio" value="1"
                                                             name="id_gender"> Mr.</span>
                                                     <span class="custom-radio"><input type="radio" value="1"
                                                             name="id_gender"> Mrs.</span>
                                                 </div> <br>
-                                                <label>First Name</label>
+                                                <label>Họ</label>
                                                 <input type="text" name="first-name">
-                                                <label>Last Name</label>
+                                                <label>Tên</label>
                                                 <input type="text" name="last-name">
                                                 <label>Email</label>
                                                 <input type="text" name="email-name">
@@ -153,19 +119,8 @@
                                                     (E.g.: 05/31/1970)
                                                 </span>
                                                 <br>
-                                                <span class="custom_checkbox">
-                                                    <input type="checkbox" value="1" name="optin">
-                                                    <label>Receive offers from our partners</label>
-                                                </span>
-                                                <br>
-                                                <span class="custom_checkbox">
-                                                    <input type="checkbox" value="1" name="newsletter">
-                                                    <label>Sign up for our newsletter<br><em>You may unsubscribe at any
-                                                            moment. For that purpose, please find our contact info in
-                                                            the legal notice.</em></label>
-                                                </span>
                                                 <div class="save_button primary_btn default_button">
-                                                    <button type="submit">Save</button>
+                                                    <button type="submit">Lưu</button>
                                                 </div>
                                             </form>
                                         </div>
